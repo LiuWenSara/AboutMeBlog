@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AboutLiuWen</title>
+    <link rel='stylesheet' href="/stylesheets/bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body id="canvas-particle">
+     <header class="clearfix">
+     	<div class="header main">
+     		<div class="self-img"><img src="/images/self02.jpg"></div>
+     		<dl>
+     				<dd><a href="/">博客</a></dd>
+     				<dd><a href="/music">电音</a></dd>
+     				<dd><a href="/about">关于我</a></dd>
+     				<% if (user) { %>
+     				<dd>博主
+     				   <ul>
+     				   	<li><a href="/upload">传文件</a></li>
+     				   	<li><a href="/post">写博客</a></li>
+     				   	<li><a href="/logout">退出</a></li>
+     				   </ul>
+     				</dd>
+     				<% } %>
+     		</dl>
+     	</div>
+     </header>
+    <div class="content main clearfix">

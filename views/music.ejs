@@ -1,0 +1,17 @@
+<%- include header %>
+<h1><%= title %></h1>
+<div class="musicList">
+     <span type="column" class="selected">柱状图</span>
+     <span type="dot">小圆点</span>
+</div>
+<div id="music-left"class="music col-xs-5 col-md-3">    
+<ul>
+     <% musicName.forEach(function(name){ %>
+     <li><%= name %></li>
+  <% }) %>
+</ul>
+</div>
+<div id="box" class="music col-xs-6 col-md-8">
+
+</div>
+<%- include footer %>

@@ -1,0 +1,364 @@
+html {
+    font-size:75%;
+}
+#canvas-particle{
+    background:black;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "微软雅黑";
+    color: #2e3338;
+    list-style: none;
+}
+
+form {
+    font-size: 1.7rem;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a:link {
+    color: #2e3338;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2e3338;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #888888;
+    text-decoration: none;
+}
+
+a:active {
+    color: #888888;
+    text-decoration: none;
+}
+
+form label {
+    font-size: 1.7rem;
+}
+
+.main {
+    margin: 0px auto;
+    width: 80%;
+}
+
+.main-content {
+    width: 95%;
+    margin: 0px auto;
+    margin-bottom: 1.7rem;
+} 
+
+
+/*header*/
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 8.3rem;
+    width: 100%;
+    background: white;
+    border-radius: 0.25rem;
+    z-index: 1;
+}
+
+.header {
+    height: 8.3rem;
+    position: relative;
+}
+
+.self-img {
+    width: 6.7rem;
+    height: 6.7rem;
+    border-radius: 6.7rem;
+    overflow: hidden;
+    float: left;
+    margin-top: 1.7rem;
+}
+
+.self-img img {
+    width: 6.7rem;
+    height: 9.2rem;
+}
+.header dl {
+    position:absolute;
+    left: 10rem;
+    top: 0px;
+}
+.header dd {
+    cursor:pointer;
+    width: 6.7rem;
+    display: inline-block;
+    text-align: center;
+    padding-top:4.5rem;
+    padding-bottom:0.6rem;
+    font-size: 2.1rem;
+}
+.header dd:last-child{
+    position: relative;
+}
+.header .active {
+    border: none;
+    border-bottom-width: 5rem;
+    border-bottom: 0.4rem solid grey;
+}
+header ul {
+    display:none;
+    position: absolute;
+    font-size:1.5rem;
+    left:1rem;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 8.3rem;
+}
+
+.footer {
+    margin-top: 1.7rem;
+    height: 8.3rem;
+    border-top: 0.17rem solid grey;
+}
+
+.footer p {
+    padding-top: 0.8rem;
+    height: 2.5rem;
+    color: grey;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*index content*/
+.content {
+    margin-top: 10rem;
+    background: white;
+    border-radius: 0.25rem;
+    position: relative;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+.content h1 {
+    margin: 0px auto;
+    line-height: 3.2rem;
+    padding-left: 2.1rem;
+    border-left: 0.4rem solid grey;
+    width: 95%;
+    font-size: 2.0rem;
+}
+.content .changeP{
+	width:100%;
+	font-size:3rem;
+	text-align: center;
+}
+
+.content-item {
+    margin: 0px auto;
+    width: 95%;
+    height: 16.6rem;
+    position: relative;
+}
+
+.content-item img {
+    position: absolute;
+    top: 2.1rem;
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 0.25rem;
+}
+
+.content-item h3 {
+    top: 4.2rem;
+    position: absolute;
+    left: 15rem;
+}
+
+.content-item h5 {
+    position: absolute;
+    right: 1.7rem;
+    bottom: 2.1rem;
+}
+/*upload*/
+.upload{
+    margin-left:2rem;
+}
+.upload input,.upload button{
+    margin-top:2rem;
+}
+
+/*about content*/
+
+.aboutme p {
+    width: 100%;
+    text-indent: 2em;
+    font-size: 1.3rem;
+}
+
+.project div {
+    height: 20.8rem;
+    position: relative;
+    text-align: center;
+    line-height: 20.8rem;
+    border-radius: 0.25rem;
+}
+
+.project img {
+    width: 16.6rem;
+    height: 16.6rem;
+    border-radius: 0.25rem;
+}
+
+
+/*article post*/
+
+.article-form {
+    padding-top: 2.5rem;
+}
+
+.article-form label {
+    line-height: 2.5rem;
+}
+.article-form textarea {
+    width: 100%;
+    height: 25rem;
+}
+
+
+/*blog content*/
+
+.article h4 {
+    width: 100%;
+    padding-bottom: 1.7rem;
+    padding-left: 80%;
+}
+
+.content .article p {
+    margin: 0px auto;
+    width: 90%;
+    text-indent: 2em;
+    font-size: 1.3rem;
+}
+
+.comment h2 {
+    margin: 0px auto;
+    padding-top: 0.8rem;
+    width: 95%;
+}
+
+.comment-item {
+    margin-top: 1.7rem;
+    width: 90%;
+    margin: 0px auto;
+    font-size: 0.8rem;
+    border: none;
+    border-bottom-width: 80%;
+    border-bottom: 1px solid lightgrey;
+}
+
+.comment-item h4 {
+    width: 100%;
+    line-height: 2.5rem;
+}
+
+.comment-form {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 1.7rem;
+}
+
+.comment-form input {
+    width: 60%;
+}
+
+.comment-form textarea {
+    width: 80%;
+    height: 16.7rem;
+}
+/*music*/
+.music{
+    margin-top:0.5rem;
+}
+#box{
+   height:20rem;
+}
+.music li{
+    cursor:pointer;
+    font-size:1.5rem;
+}
+.musicList{
+    width:100%;
+    text-align:center;
+}
+.musicList span{
+    border-radius:0.5rem;
+    font-size:2rem;
+    cursor:pointer;
+}
+.musicList .selected{
+    background:grey;
+    color:white;
+}
+#music-left{
+    min-height:20rem;
+    border-right:1px dotted grey;
+}
+/*about*/
+.about_me{
+    width:90%;
+    margin: 0px auto;
+    margin-top:2rem;
+}
+.about_me p{
+    text-indent:2em;
+    font-size:1.5rem;
+}
+.about_me ul{
+    border-top:0.2rem dotted grey;
+    margin-left:2em;
+    margin:0px auto;
+    text-align:center;
+    font-size:1rem;
+    width:70%;
+}
+.about_me ul li{
+    line-height:2rem;
+    color:#70716D;
+}

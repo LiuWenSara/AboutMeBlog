@@ -1,0 +1,18 @@
+<%- include header %>
+     	<h1><%= title %><a href="/login">+</a></h1>
+     	<% posts.forEach(function (post,index) { %>
+     	<div class="content-item clearfix">
+     		<img src="/images/<%= post.image %>">
+     		<h3><a href="/u/<%= post.blogTitle %>"><%= post.blogTitle %></a></h3>
+     		<h5><%= post.time.day %></h5>
+     	</div>
+     	 <% }) %>
+     	 <div class="changeP clearfix">
+     	 <% if (!isFirstPage) { %>
+     	   <a href="?p=<%= page-1 %>"><span class="glyphicon glyphicon-chevron-left"></span></a>
+     	 <% } %>
+     	 <% if (!isLastPage) { %>
+     	  <a href="?p=<%= page+1 %>"><span class="glyphicon glyphicon-chevron-right"></span></a>
+     	 <% } %>
+     	 </div>
+<%- include footer %>
