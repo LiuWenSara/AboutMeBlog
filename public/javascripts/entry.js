@@ -145,11 +145,11 @@ function draw(arr) {
 
 
 function changeStyle() {
-	var spans = $(".musicList span");
-	spans.click(function() {
+	var divs = $(".musicList div");
+	divs.click(function() {
 		var i = $(this).index();
-		spans.removeClass('selected')
+		divs.removeClass('selected')
 			.eq(i).addClass('selected');
-		draw.type = spans.eq(i).attr('type');
+		draw.type = divs.eq(i).attr('type');
 	});
 }

@@ -12,7 +12,7 @@ html {
     list-style: none;
 }
 
-form {
+/*form {
     font-size: 1.7rem;
 }
 
@@ -35,7 +35,7 @@ h4 {
 
 h5 {
     font-size: 1.3rem;
-}
+}*/
 
 .clearfix:after {
     content: ".";
@@ -276,7 +276,10 @@ footer {
     text-indent: 2em;
     font-size: 1.3rem;
 }
-
+.comment{
+    border-top:1px dotted grey;
+    border-top-width: 90%;
+}
 .comment h2 {
     margin: 0px auto;
     padding-top: 0.8rem;
@@ -295,7 +298,8 @@ footer {
 
 .comment-item h4 {
     width: 100%;
-    line-height: 2.5rem;
+    line-height: 2.0rem;
+    font-size:1.5rem;
 }
 
 .comment-form {
@@ -327,10 +331,11 @@ footer {
     width:100%;
     text-align:center;
 }
-.musicList span{
+.musicList div{
     border-radius:0.5rem;
     font-size:2rem;
     cursor:pointer;
+    line-height:2.5rem;
 }
 .musicList .selected{
     background:grey;

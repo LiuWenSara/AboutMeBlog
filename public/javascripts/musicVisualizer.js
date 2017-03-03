@@ -12,7 +12,7 @@ function musicVisualizer(obj) {
 }
 musicVisualizer.prototype.load = function(url, fun) {
 	this.xhr.abort();
-	this.xhr.open("GET", url);
+	this.xhr.open("GET", url, false);
 	this.xhr.responseType = "arraybuffer";
 	var self = this;
 	this.xhr.onload = function() {

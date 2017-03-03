@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+var http = require('http');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -10,9 +11,10 @@ var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var multer = require('multer');
 
-var routes = require('./routes/index')
+var routes = require('./routes/index');
 
 var app = express();
+app.set('port', process.env.PORT || 3000);
 app.use(multer({
 	dest: './public/images',
 	rename: function(fieldname, filename) {
@@ -67,5 +69,6 @@ app.use(function(err, req, res, next) {
 	res.status(err.status || 500);
 	res.render('error');
 });
-
-module.exports = app;
+http.createServer(app).listen(app.get('port'), function(){
+	console.log('Express server listening on port ' + app.get('port'));
+});

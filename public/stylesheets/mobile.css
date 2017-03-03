@@ -1,12 +1,19 @@
 @media screen and (max-width:768px){
-	html{
-		font-size:37.5%;
-	}
+form {
+    font-size: 0.7rem;
+}
+
+p {
+    font-size: 0.5rem;
+    line-height: 2rem;
+}
+
+
 .input{
-    font-size:2rem;
+    font-size:1.5rem;
 }
 .button{
-    font-size:1.5rem;
+    font-size:1rem;
     text-align: center;
 }
 textarea{
@@ -22,7 +29,7 @@ form label{
 }
 /*header*/
 header {
-    height: 6.5rem;
+    height: 5.5rem;
 }
 .self-img {
     width: 4.5rem;
@@ -31,7 +38,7 @@ header {
     overflow: hidden;
     float: left;
     margin-left:.6rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .self-img img {
@@ -47,9 +54,9 @@ header {
     width: 5rem;
     display: inline-block;
     text-align: center;
-    padding-top:3.5rem;
-    padding-bottom:1.3rem;
-    font-size: 2.1rem;
+    padding-top:2.5rem;
+    padding-bottom:1.2rem;
+    font-size: 1.1rem;
 }
 
 .header .active {
@@ -59,6 +66,7 @@ header {
 }
 header ul{
     left:1rem;
+    font-size:1.0rem;
 }
 header ul a:link {
     color: grey;
@@ -84,7 +92,7 @@ header ul a:active {
     margin-top: 8.5rem;
 }
 .content h1 {
-    font-size: 3.0rem;
+    font-size: 2.0rem;
 }
 .content-item {
     margin: 0px auto;
@@ -95,22 +103,35 @@ header ul a:active {
 
 .content-item img {
     position: absolute;
-    top: 2.1rem;
-    width: 8rem;
-    height: 8rem;
+    top: 1.8rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 0.25rem;
 }
 .content-item h3 {
-    top: 2rem;
+    top: 1rem;
     position: absolute;
     left: 10rem;
-    font-size:3rem;
+    font-size:2rem;
 }
 
 .content-item h5 {
     position: absolute;
-    right: 1.7rem;
-    bottom: 0.5rem;
+    right: 1.0rem;
+    bottom: 0.3rem;
+}
+/*music*/
+.musicList div{
+    border-radius:0.2rem;
+    font-size:1.5rem;
+    cursor:pointer;
+    line-height:2.0rem;
+}
+.music li{
+    font-size:1.0rem;
+}
+.musicList{
+    margin:0 auto;
 }
 /*upload*/
 .upload{
@@ -120,10 +141,10 @@ header ul a:active {
     margin-top:2rem;
 }
 /*about content*/
-.aboutme p{
+.about_me p{
   width:100%;
   text-indent:2em;
-  font-size:1.3rem;
+  font-size:1.2rem;
 }
 .project div{
 	height:20.8rem;
@@ -149,17 +170,22 @@ header ul a:active {
     width:100%;
     padding-bottom:1.7rem;
     padding-left:80%;
+    font-size:1.0rem;
 }
+    .article h3{
+        font-size:1.3rem;
+    }
 .content .article p{
   margin:0px auto;
   width:90%;
   text-indent:2em;
-  font-size:1.3rem;
+  font-size:1.5rem;
 }
 .comment h2{
   margin: 0px auto;
     padding-top: 0.8rem;
     width: 95%;
+    font-size:1.8rem;
 }
 .comment-item{
     margin-top: 1.7rem;
@@ -172,13 +198,18 @@ header ul a:active {
 }
 .comment-item h4{
     width:100%;
-    line-height:2.5rem;
+    line-height:1.5rem;
+    font-size:1.0rem;
 }
+.comment-item p{
+    font-size:0.9rem;
+    }
 .comment-form{
     width:90%;
     margin:0px auto;
     margin-top:1.7rem;
 }
+
 .comment-form input{
    width:60%;
 }
@@ -187,7 +218,8 @@ header ul a:active {
     height:16.7rem;
 }
 .about_me h2{
-    font-size:3rem;
+    font-size:2rem;
 }
+
 
 }

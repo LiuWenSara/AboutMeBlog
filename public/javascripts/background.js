@@ -19,8 +19,8 @@ var CanvasParticle = (function() {
 			points: [],
 			// 默认配置
 			config: {
-				vx: canvasConfig.vx || 4,
-				vy: canvasConfig.vy || 4,
+				vx: canvasConfig.vx || 4,//x轴上得横向速度
+				vy: canvasConfig.vy || 4,//y轴上得纵向速度
 				height: canvasConfig.height || 2,
 				width: canvasConfig.width || 2,
 				count: canvasConfig.count || 100,
@@ -28,7 +28,7 @@ var CanvasParticle = (function() {
 				stroke: canvasConfig.stroke || "130,255,255",
 				dist: canvasConfig.dist || 6000,
 				e_dist: canvasConfig.e_dist || 20000,
-				max_conn: 10
+				max_conn: 10//最大连接时间
 			}
 		};
 
@@ -66,7 +66,7 @@ var CanvasParticle = (function() {
 
 	// 设置canvas大小
 	function canvasSize(canvas) {
-		canvas.width = window.innerWeight || document.documentElement.clientWidth || document.body.clientWidth;
+		canvas.width = window.innerWeight || document.documentElement.clientWidth || document.body.clientWidth;//后两者是针对IE5，6，7，8
 		canvas.height = window.innerWeight || document.documentElement.clientHeight || document.body.clientHeight;
 	}
 
@@ -75,7 +75,7 @@ var CanvasParticle = (function() {
 		var context = canvas.context,
 			point,
 			dist;
-		context.clearRect(0, 0, canvas.element.width, canvas.element.height);
+		context.clearRect(0, 0, canvas.element.width, canvas.element.height);//清空固定矩形内部图案
 		context.beginPath();
 		context.fillStyle = "rgb(" + canvas.config.color + ")";
 		for (var i = 0, len = canvas.config.count; i < len; i++) {
